@@ -6,7 +6,7 @@
     <title>HTML Form</title>
 </head>
 <body>
-    <form action="results.html" method="GET">
+    <form action="results.html" method="GET" enctype="multipart/form-data">
         <div>
             <label for="name">Name</label>
             <input type="text" name="name" id="name" required>
@@ -48,6 +48,32 @@
                 <label for="female">Female</label>
                 <input type="radio" name="gender" value="female" id="female">
             </div>
+        </div>
+        <div>
+            <label for="eye-color">Eye Color</label>
+            <select name="eye color" id="eye-color">
+                <option label="Blue" value="Blue"></option>
+                <option value="Green">Green</option>
+                <option value="Grey">Grey</option>
+                <option value="Brown">Brown</option>
+            </select>
+        </div>
+        <div>
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio"></textarea>
+        </div>
+        <input type="hidden" name="hidden message" value="secret">
+        <div>
+            <label for="file">File</label>
+            <input id="file" type="file" name="file">
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+        <div>
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url">
         </div>
         <div>
             <label>
